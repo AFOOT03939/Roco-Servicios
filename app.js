@@ -28,6 +28,8 @@ button.addEventListener("click", function(){
     searchBar();
 });
 
+
+// When the bar is empty, all is shown up
 input.addEventListener("input", function() {
   if (input.value == "") {
     for (let i = 0; i < div.length; i++) {
