@@ -11,7 +11,9 @@ body{
 }
 
 ul{
-    list-style-type: none;
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar{
@@ -178,7 +180,10 @@ ul{
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 40px 0;
+}
+
+footer .container{
+    padding-top: 2rem;
 }
 
 .font-list {
@@ -191,9 +196,12 @@ footer {
 }
 
 .font-list li {
-    display: flex;
     align-items: center;
     gap: 0.5rem; 
+}
+
+#e-mail_list{
+    padding-left: 1.5rem;
 }
 
 @media (min-width: 1074px) {
@@ -210,10 +218,6 @@ footer {
 
 /* Estilos responsivos para el iframe */
 @media (max-width: 767px) {
-    footer{
-        height: 70vh;
-    }
-
     .font-list {
         list-style-type: none;
         padding: 0;
@@ -222,6 +226,10 @@ footer {
         max-width: 400px;
         margin-top: 0px;
     }
+
+    #map-card{
+        width: 450px;
+        }
 
     .row.align-items-center {
         flex-direction: column;
@@ -250,4 +258,418 @@ footer {
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.section-title {
+    color: #1E90FF;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    color: #555;
+    font-size: 1.1rem;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para el carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Estilos para Nuestro Enfoque */
+.enfoque-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.enfoque-card:hover {
+    transform: translateY(-5px);
+}
+
+.enfoque-icon {
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.enfoque-card h4 {
+    color: #1E90FF;
+    margin-bottom: 10px;
+}
+
+.enfoque-card p {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Estilos para Principales Servicios */
+.servicios-list {
+    margin-bottom: 30px;
+}
+
+.servicio-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-icon {
+    font-size: 2rem;
+    color: red;
+    margin-right: 15px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.servicio-content h4 {
+    color: #1E90FF;
+    margin-bottom: 5px;
+}
+
+.servicio-content p {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Estilos para Supervisión y Facilidad para trabajar */
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1E90FF;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Estilos para Galería de Trabajos */
+.trabajo-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trabajo-card img {
+    transition: transform 0.3s;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trabajo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.trabajo-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Estilos para Empresas que confían en nosotros */
+.cliente-logo {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cliente-logo:hover {
+    transform: translateY(-5px);
+}
+
+.contact-header {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    color: #1E90FF;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Tarjeta de información */
+.contact-info-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-intro {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 25px;
+}
+
+/* Elementos de información de contacto */
+.contact-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    color: red;
+    margin-right: 15px;
+    min-width: 40px;
+}
+
+.contact-text h4 {
+    color: #1E90FF;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.contact-text p {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5px;
+}
+
+.contact-link {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #1E90FF;
+}
+
+/* Redes sociales */
+.social-media h4 {
+    color: #1E90FF;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons.justify-content-center {
+    justify-content: center;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    color: #1E90FF;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #1E90FF;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Mapa */
+.map-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Métodos de contacto rápido */
+.quick-contact-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.quick-contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.quick-contact-icon {
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.quick-contact-card h3 {
+    color: #1E90FF;
+    margin-bottom: 10px;
+}
+
+.quick-contact-card p {
+    color: #555;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20px;
+}
+
+.quick-contact-btn {
+    background-color: #1E90FF;
+    border: none;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+.quick-contact-btn:hover {
+    background-color: #0066cc;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Preguntas frecuentes */
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #1E90FF;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #1E90FF;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #ddd;
+}
+
+.accordion-body {
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: #555;
+}
+
+/* Call to Action */
+.cta-section {
+    background-color: #1E90FF;
+    color: white;
+    margin-top: 50px;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.cta-button {
+    background-color: white;
+    color: #1E90FF;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f8f9fa;
+    color: #0066cc;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .contact-header {
+        padding: 40px 20px;
+    }
+    
+    .contact-title {
+        font-size: 2rem;
+    }
+    
+    .contact-info-card {
+        padding: 20px;
+    }
+    
+    .cta-section {
+        text-align: center;
+    }
+    
+    .cta-title {
+        font-size: 1.5rem;
+    }
 }

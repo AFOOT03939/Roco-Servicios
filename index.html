@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Main page-Roco</title>
+    <title>ROCO - Servicios Profesionales de Limpieza y Mantenimiento</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light sticky-top">
@@ -26,21 +26,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="index.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="products.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="contact.html">Contacto</a>
                     </li>
                 </ul>
-                
-                <!-- Barra de búsqueda -->
-                <form class="d-flex ms-lg-3">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -60,378 +54,368 @@
             <div id="downbar"></div>
         </div>
     </div>
-    <div class="container">
-        <div class="miau">
-            <h2 class="title-main product-Name">Productos</h2>
+
+    <!-- Descripción Principal -->
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="section-title">ROCO SERVICIOS PROFESIONALES DE LIMPIEZA Y MANTENIMIENTO</h2>
+                <p class="section-description">
+                    Ofrecemos soluciones integrales de limpieza y mantenimiento para empresas y hogares, 
+                    con un equipo profesional y comprometido con la excelencia.
+                </p>
+            </div>
         </div>
     </div>
-    <!-- Divisor -->
-    <div class="container">
-        <div class="row justify-content-center p-3">
-            <div id="downbar"></div>
+
+    <!-- Carrusel de Servicios -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/polizaLimpieza.jpg" class="d-block w-100" alt="Póliza de limpieza">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Póliza de limpieza</h3>
+                        <p>Servicio integral de limpieza para su empresa o negocio</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/pepoplepainting.png" class="d-block w-100" alt="Sellado de fachada">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Sellado de fachada y Pintura en altura</h3>
+                        <p>Mantenimiento profesional para exteriores de edificios</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/windowsCleaners.jpg" class="d-block w-100" alt="Limpieza de vidrios">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Limpieza de vidrio en altura</h3>
+                        <p>Servicio especializado para edificios y estructuras altas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fumigation.webp" class="d-block w-100" alt="Jardinería">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Jardinería y Fumigación</h3>
+                        <p>Mantenimiento de áreas verdes y control de plagas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/sofaCleaning.jpg" class="d-block w-100" alt="Lavado de salas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Lavado de salas con máquina de inyección/succión</h3>
+                        <p>Limpieza profunda para muebles y tapicería</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
     </div>
-    <!-- Productos -->
-    <div class="container-fluid">
-        <form class="d-flex ms-lg-3">
-            <input class="form-control search-bar me-2" id="myInput" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-success" id="search" type="button">Buscar</button>
-        </form>
-        <div class="p-3 row px-5 justify-content-around d-flex">
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Suavizante.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Suavizante de telas</p>
-                    <p class="description">1L</p>
-                    <p class="price">$15.00</p>
+
+    <!-- Nuestro Enfoque -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title">Nuestro Enfoque</h2>
+                <div id="downbar" class="my-3"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="enfoque-card">
+                    <div class="enfoque-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <h4>Calidad en el servicio</h4>
+                    <p>Nos comprometemos a ofrecer servicios de la más alta calidad, superando las expectativas de nuestros clientes.</p>
                 </div>
             </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/fabuloso.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Fabuloso</p>
-                    <p class="description">1L</p>
-                    <p class="price">$10.00</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="enfoque-card">
+                    <div class="enfoque-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Garantía de los trabajos</h4>
+                    <p>Todos nuestros servicios cuentan con garantía, asegurando resultados óptimos y duraderos.</p>
                 </div>
             </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Cloro 1L.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Cloro</p>
-                    <p class="description">1L</p>
-                    <p class="price">$10.00</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="enfoque-card">
+                    <div class="enfoque-icon">
+                        <i class="bi bi-person-check"></i>
+                    </div>
+                    <h4>Atención personalizada</h4>
+                    <p>Adaptamos nuestros servicios a las necesidades específicas de cada cliente, brindando soluciones a medida.</p>
                 </div>
             </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Pinol.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Pinol</p>
-                    <p class="description">1L</p>
-                    <p class="price">$15.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Shampoo para manos.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Shampoo para manos</p>
-                    <p class="description">1L</p>
-                    <p class="price">$25.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Desengrasante.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Desengrasante</p>
-                    <p class="description">20L</p>
-                    <p class="price">$20.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/fabuloso_porrón.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Fabuloso</p>
-                    <p class="description">20L</p>
-                    <p class="price">$230.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Cloro_porrón.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Cloro</p>
-                    <p class="description">20L</p>
-                    <p class="price">$230.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Bolsa detergente 1kg.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa de detergente</p>
-                    <p class="description">1kg</p>
-                    <p class="price">$230.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Detergente 9kg.webp">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa de detergente</p>
-                    <p class="description">9kg</p>
-                    <p class="price">$230.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Basura.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsas de basura</p>
-                    <p class="description">Chica - Mediana - Grande</p>
-                    <p class="price">$50.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/ExtraClean.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Lavatrastes</p>
-                    <p class="description">750ml</p>
-                    <p class="price">$15.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Escoba_espiga.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Escoba</p>
-                    <p class="price">$80.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Escoba.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Escoba cepillo</p>
-                    <p class="price">$80.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Trapeador microfibra.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Trapeador de microfibra</p>
-                    <p class="price">$80.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Recogedor.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Recogedor</p>
-                    <p class="price">$40.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/trapeador de gas.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Trapeador de gas</p>
-                    <p class="price">$120.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/trapeador blanco.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Trapeador blanco</p>
-                    <p class="price">$60.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/cubeta.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Cubeta</p>
-                    <p class="price">$55.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/microfibra.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Microfibra</p>
-                    <p class="price">$40.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/fibra_verde.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Fibra Verde</p>
-                    <p class="price">$15.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/fibra_alambre.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Fibra Alamabre</p>
-                    <p class="price">$22.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/mecate.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Mecate</p>
-                    <p class="price">$15.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Cepillo-bola.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Cepillo bola</p>
-                    <p class="price">$48.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Bolsa rollo.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa transparente americana</p>
-                    <p class="description">1kg</p>
-                    <p class="price">$85.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Bolsa rollo.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa transparente americana</p>
-                    <p class="description">2kg</p>
-                    <p class="price">$120.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Can liner.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa Can Liner</p>
-                    <p class="description">Chica - Mediana</p>
-                    <p class="price">$45.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Can liner.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa Can Liner</p>
-                    <p class="description">Grande</p>
-                    <p class="price">$60.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/bolsa bollo.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa de bollo</p>
-                    <p class="price">$20.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/bolsa_camiseta.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa de Camiseta</p>
-                    <p class="description">Chica - Mediana - Grande</p>
-                    <p class="price">$50.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/bolsa_camiseta.png">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa de Camiseta</p>
-                    <p class="description">Jumbo - Extra Jumbo</p>
-                    <p class="price">$60.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/bolsa_transparente.webp">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Bolsa transparente</p>
-                    <p class="description">1kg</p>
-                    <p class="price">$65.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/MIA.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Servilleta Mia</p>
-                    <p class="price">$40.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/petalo.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Servilleta Pétalo</p>
-                    <p class="price">$95.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/tork.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Servilleta Tork</p>
-                    <p class="price">$40.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/tork_caja.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Servilleta tork</p>
-                    <p class="description">caja</p>
-                    <p class="price">$515.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Bio.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Servilleta Bio</p>
-                    <p class="price">$30.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/wimpy.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Servilleta Wimpy</p>
-                    <p class="price">$25.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Papel_Aluminio.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Papel Aluminio</p>
-                    <p class="description">7mts</p>
-                    <p class="price">$30.00</p>
-                </div>
-            </div>
-            <div class="card border-0 col-lg-2 col-md-4 align-items-center">
-                <img class="prod-Img" src="Images/Papel_Aluminio_3kg.jpg">
-                <div class="mt-2 mb-2" id="product-bar"></div>
-                <div>
-                    <p class="product-Name">Papel Aluminio</p>
-                    <p class="description">3kg</p>
-                    <p class="price">$605.00</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="enfoque-card">
+                    <div class="enfoque-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h4>Respuesta inmediata de reportes</h4>
+                    <p>Atendemos con rapidez cualquier solicitud o reporte, garantizando una comunicación eficiente.</p>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+
+    <!-- Principales Servicios -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title">PRINCIPALES SERVICIOS</h2>
+                <div id="downbar" class="my-3"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="servicios-list">
+                    <div class="servicio-item">
+                        <div class="servicio-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <div class="servicio-content">
+                            <h4>Póliza de limpieza para hogares / plazas</h4>
+                            <p>Servicio integral y periódico de limpieza para mantener sus instalaciones impecables.</p>
+                        </div>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <div class="servicio-content">
+                            <h4>Sellado de fachada y Pintura en altura</h4>
+                            <p>Protección y embellecimiento de fachadas con técnicas especializadas de altura.</p>
+                        </div>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-icon">
+                            <i class="bi bi-window"></i>
+                        </div>
+                        <div class="servicio-content">
+                            <h4>Limpieza de vidrio en altura</h4>
+                            <p>Limpieza profesional de ventanales y superficies acristaladas en edificios altos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="servicios-list">
+                    <div class="servicio-item">
+                        <div class="servicio-icon">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                        <div class="servicio-content">
+                            <h4>Póliza para comercio / Industrial / Comercial</h4>
+                            <p>Planes de mantenimiento adaptados a diferentes tipos de negocios e industrias.</p>
+                        </div>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-icon">
+                            <i class="bi bi-tree"></i>
+                        </div>
+                        <div class="servicio-content">
+                            <h4>Jardinería y Fumigación</h4>
+                            <p>Cuidado de áreas verdes y control de plagas para mantener entornos saludables.</p>
+                        </div>
+                    </div>
+                    <div class="servicio-item">
+                        <div class="servicio-icon">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <div class="servicio-content">
+                            <h4>Lavada de salas con máquina de inyección/succión</h4>
+                            <p>Limpieza profunda de muebles y tapicerías con tecnología avanzada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Supervisión y Facilidad para trabajar -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-center">Supervisión</h3>
+                    <p>
+                        Nuestro equipo de supervisores altamente capacitados garantiza que cada servicio 
+                        se realice con los más altos estándares de calidad. Realizamos inspecciones 
+                        periódicas y mantenemos una comunicación constante con nuestros clientes para 
+                        asegurar su completa satisfacción.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h3 class="text-center">Facilidad para trabajar</h3>
+                    <p>
+                        Nos adaptamos a sus horarios y necesidades específicas, minimizando las 
+                        interrupciones en sus operaciones diarias. Nuestro personal está entrenado 
+                        para trabajar de manera eficiente y discreta, respetando los protocolos 
+                        y políticas de cada cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galería de Trabajos -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title">Nuestros Trabajos</h2>
+                <div id="downbar" class="my-3"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="trabajo-card">
+                    <img src="Images/windowRocco.png" class="img-fluid" alt="Limpieza de vidrios en altura">
+                    <div class="trabajo-overlay">
+                        <h4>Limpieza de vidrios en altura</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="trabajo-card">
+                    <img src="Images/selladodeFachada.png" class="img-fluid" alt="Sellado de fachada">
+                    <div class="trabajo-overlay">
+                        <h4>Sellado de fachada</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="trabajo-card">
+                    <img src="Images/gardener.png" class="img-fluid" alt="Jardinería">
+                    <div class="trabajo-overlay">
+                        <h4>Jardinería</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="trabajo-card">
+                    <img src="Images/PolizaLimpieza2.png" class="img-fluid" alt="Poliza de Limpieza">
+                    <div class="trabajo-overlay">
+                        <h4>Poliza de Limpieza</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="trabajo-card">
+                    <img src="Images/LimpiezaEstacionamiento.png" class="img-fluid" alt="Limpieza de estacionamientos">
+                    <div class="trabajo-overlay">
+                        <h4>Limpieza de estacionamientos</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="trabajo-card">
+                    <img src="Images/LimpiezaComercial.png" class="img-fluid" alt="Limpieza comercial">
+                    <div class="trabajo-overlay">
+                        <h4>Limpieza comercial</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empresas con las que trabajamos -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title">Empresas que confían en nosotros</h2>
+                <div id="downbar" class="my-3"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                <div class="cliente-logo">
+                    <img src="Images/laCapital.png" alt="Cliente 1" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                <div class="cliente-logo">
+                    <img src="Images/benavides.png" alt="Cliente 2" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                <div class="cliente-logo">
+                    <img src="Images/Latitud.png" alt="Cliente 3" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                <div class="cliente-logo">
+                    <img src="Images/kerenda.png" alt="Cliente 4" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                <div class="cliente-logo">
+                    <img src="Images/abitat.png" alt="Cliente 5" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-4 text-center">
+                <div class="cliente-logo">
+                    <img src="Images/seowon.png" alt="Cliente 6" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- footer de la página -->
     <footer>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
                     <ul class="font-list">
-                        <li class="mb-3"><div class="circle"><i class="bi bi-telephone-fill p-2"></i></div> Contactanos: 811 038 7683</li>
-                        <li class="mb-3"><div class="circle"><i class="bi bi-house-door-fill p-2"></i></div> Dirección: Tapachula 95, Buenos Aires, 64800 Monterrey, N.L</li>
-                        <li class="mb-3"><div class="circle"><i class="bi bi-envelope-fill p-2"></i></div> Correo electrónico: AFOOT@gmail.com</li>
-                    </ul>
+                        <li class="mb-3 d-flex align-items-start">
+                          <div class="circle me-2">
+                            <i class="bi bi-telephone-fill p-2"></i>
+                          </div>
+                          <span>Contáctanos: 811 038 7683</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                          <div class="circle me-2">
+                            <i class="bi bi-house-door-fill p-2"></i>
+                          </div>
+                          <span>Dirección: Tapachula 95, Buenos Aires, 64800 Monterrey, N.L</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                          <div class="circle me-2">
+                            <i class="bi bi-envelope-fill p-2"></i>
+                          </div>
+                          <div>
+                            <div>Correo electrónico:</div>
+                            <ul id="e-mail_list">
+                              <li>administracion@rocoservicio.com</li>
+                              <li>ventas@rocoservicio.com</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>                      
                 </div>
                 <div class="card col-lg-6 col-md-6 col-sm-6" id="map-card">
                     <div class="">
@@ -444,3 +428,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
+</html>
